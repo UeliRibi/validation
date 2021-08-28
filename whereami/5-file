@@ -1,0 +1,6 @@
+#!/bin/bash
+#at > \*\\\'"DevOps"\\'\\*$\?\*\*\*\*\*:)
+cat << EOF > '\*\\"DevOps"\\\*$\?\*\*\*\*\*:)' 
+Hello DevOps
+EOF
+
