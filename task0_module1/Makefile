@@ -1,10 +1,15 @@
 DESTDIR=dist
 
-build:
+help:   ## Show this help usage
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+
+build:  ## Build the website (in Directory dest)
 	hugo
 
-clean:
+clean:  ## Cleans the directory dest)
 	rm -r $(DESTDIR)
 	
-post:
+post:   ## Create a new post. Arguments arePOST_NAME and POST_TITLE
 	hugo new posts/$(POST_NAME).md
+
+
